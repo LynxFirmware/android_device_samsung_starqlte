@@ -18,14 +18,10 @@
 # Inherit from sdm845-common
 -include device/samsung/sdm845-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/starqltechn
+DEVICE_PATH := device/samsung/starqlte
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := starqltechn
+TARGET_OTA_ASSERT_DEVICE := starqlte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lynx_starqlte_defconfig
-
-# Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_starqltechn
-TARGET_RECOVERY_DEVICE_MODULES := libinit_starqltechn
