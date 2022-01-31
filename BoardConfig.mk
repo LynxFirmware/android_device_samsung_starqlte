@@ -24,7 +24,7 @@ DEVICE_PATH := device/samsung/starqltechn
 TARGET_OTA_ASSERT_DEVICE := starqltechn
 
 # Kernel
-TARGET_KERNEL_CONFIG := starqlte_chn_open_defconfig
+TARGET_KERNEL_CONFIG := lynx_starqlte_defconfig
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_starqltechn

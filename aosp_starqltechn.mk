@@ -22,14 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit from starqltechn device
 $(call inherit-product, device/samsung/starqltechn/device.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 
 # Device identifier
-PRODUCT_NAME := lineage_starqltechn
+PRODUCT_NAME := aosp_starqltechn
 PRODUCT_DEVICE := starqltechn
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G9600
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+TARGET_BOOT_ANIMATION_RES := 1080
